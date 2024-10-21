@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Faz com que o layout da página seja responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página de perguntas e respostas -->
+    <title>Perguntas e Respostas</title>
+    <!-- Vincula o arquivo CSS que será usado para estilizar esta página -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/duck.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Caixa de diálogo para exibir as perguntas -->
+    <h5> <div id="dialogue-text"></div></h5>
+    <!-- Elemento visual para adicionar nuvens ao fundo da página -->
+    <div class="clouds"></div>
+
+    <!-- Container principal onde as perguntas e opções de resposta serão exibidas -->
+    <div id="game-container">
+        <!-- Container das perguntas -->
+        <div class="questions-container">
+            <!-- Área onde a pergunta e opções de resposta aparecem -->
+            <div id="question-container" class="hidden">
+                <!-- Texto da pergunta -->
+                <p id="question-text"></p>
+                <!-- Botões de opções de resposta -->
+                <button id="option1" class="hidden"></button>
+                <button id="option2" class="hidden"></button>
+                <button id="option3" class="hidden"></button>
+            </div>
+            <!-- Caixa de feedback que aparece quando a resposta está correta ou incorreta -->
+            <div class="feedback-box correct">Resposta Correta!</div>
+            <div class="feedback-box incorrect">Resposta Incorreta!</div>
+            <!-- Container de feedback -->
+            <div id="feedback" class="feedback-container">
+                <p class="correct hidden">Resposta correta!</p>
+                <p class="incorrect hidden">Resposta incorreta!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão para retornar ao menu -->
+    <button class="return-menu">Menu</button>
+    <!-- Script externo com o código JavaScript para esta página -->
+    <script src="js/peq.js"></script>
+</body>
+</html>

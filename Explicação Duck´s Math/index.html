@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Faz com que o layout da página seja responsivo, ajustando-se a diferentes larguras de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece na aba do navegador -->
+    <title>Duck's Math</title>
+    <!-- Vincula o arquivo CSS externo que será usado para estilizar a página -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/duck.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Título principal do jogo -->
+    <h1>Duck's Math</h1>
+
+    <!-- Menu de navegação com botões para Jogar, Sobre e Sair -->
+    <div class="menu">
+        <!-- Botão para iniciar o jogo -->
+        <button1 id="play-button">Jogar</button1>
+        <!-- Botão para mostrar a descrição do jogo -->
+        <button1 id="description-button">Sobre</button1>
+        <!-- Botão para sair do jogo -->
+        <button1 id="exit-button">Sair</button1>
+    </div>
+
+    <!-- Modal (janela pop-up) que aparece quando o jogador clica no botão "Sobre" -->
+    <div id="description-modal" class="modal">
+        <h2>Descrição</h2>
+        <!-- Texto que descreve o propósito do jogo -->
+        <p>O jogo "Duck's Math" é um projeto individual desenvolvido como parte das atividades do 3º ano STEAM na escola SESI. Trata-se de um jogo de perguntas e respostas matemático, no qual o jogador deve resolver questões desafiadoras . O objetivo principal é estimular o raciocínio lógico e a agilidade no cálculo mental de forma lúdica, e busca incentivar o aprendizado de matemática de maneira interativa.</p>
+        <!-- Botão para fechar a janela de descrição -->
+        <button id="close-description">Fechar</button>
+    </div>
+
+    <!-- Modal de confirmação de saída que aparece quando o jogador clica no botão "Sair" -->
+    <div id="confirmationModal" class="confirmation-modal">
+        <p>Tem certeza que deseja sair?</p>
+        <!-- Botão para confirmar a saída -->
+        <button id="confirmExit">Sim</button>
+        <!-- Botão para cancelar a saída -->
+        <button id="cancelExit">Não</button>
+    </div>
+
+    <!-- Elemento visual para adicionar nuvens ao fundo da página -->
+    <div class="clouds"></div>
+
+    <!-- Script externo com o código JavaScript para manipular eventos nesta página -->
+    <script src="js/script.js"></script>
+</body>
+</html>
