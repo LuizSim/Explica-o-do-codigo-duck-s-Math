@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Faz com que o layout da página seja responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página do jogo -->
+    <title>Jogo Duck's Math</title>
+    <!-- Vincula o arquivo CSS que será usado para estilizar o jogo -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/duck.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Imagem de um pato para representar o personagem principal do jogo -->
+    <img src="imagens/duck.png" alt="Duck" class="duck-image">
+
+    <!-- Container do jogo que mantém o diálogo e outros elementos do jogo -->
+    <div class="game-container">
+        <!-- Caixa de diálogo onde o Duck fala com o jogador -->
+        <div class="dialogue-box" id="dialogue-box">
+            <!-- Parágrafo onde o texto do diálogo é exibido -->
+            <p id="dialogue-text"></p>
+            <!-- Campo de entrada para o jogador digitar seu nome -->
+            <input type="text" id="name-input" class="name-input" placeholder="Digite seu nome..." style="display:none;">
+        </div>
+    </div>
+
+    <!-- Elemento visual para adicionar nuvens ao fundo da página -->
+    <div class="clouds"></div>
+
+    <!-- Script externo com o código JavaScript para as interações desta página -->
+    <script src="js/scriptDJ.js"></script>
+</body>
+</html>
