@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- O head contém meta-informações sobre o documento. As informações 
+    aqui não são visíveis diretamente ao usuário.
+    <meta charset="UTF-8"> define o conjunto de caracteres do documento 
+    como UTF-8, que suporta caracteres de praticamente todos os idiomas.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    define que a página deve ser responsiva, ou seja, ajusta seu conteúdo 
+    de acordo com a largura do dispositivo. Isso é essencial para exibir 
+    corretamente em dispositivos móveis.
+    <title>Duck's Math</title> define o título que aparece na aba do navegador.
+    <link rel="stylesheet" href="style.css"> vincula um arquivo CSS externo 
+    chamado "style.css" ao documento HTML, responsável por dar estilo à página.
+    <link rel="icon" href="imagens/duck.png" type="image/x-icon"> define o ícone 
+    que será exibido na aba do navegador ao lado do título.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck's Math</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/duck.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- A tag <img> exibe a imagem do "Duck", com a fonte definida em "imagens/duck.png" 
+    e a classe "duck-image" é usada para aplicar estilo e posicionamento à imagem através 
+    do CSS. -->
+    <img src="imagens/duck.png" alt="Duck" class="duck-image">
+
+    <!-- A div com a classe "game-container" envolve a estrutura principal do jogo. 
+    Dentro dela está a div "dialogue-box", onde os diálogos e interações iniciais do 
+    jogo ocorrem. -->
+    <div class="game-container">
+        <div class="dialogue-box" id="dialogue-box">
+
+            <!-- O parágrafo com o ID "dialogue-text" exibe textos ou falas do jogo 
+            que são controladas pelo JavaScript. -->
+            <p id="dialogue-text"></p>
+
+            <!-- O input com ID "name-input" permite que o usuário insira seu nome. 
+            Ele está inicialmente oculto (com display:none) e só será exibido quando 
+            o JavaScript alterar essa propriedade. -->
+            <input type="text" id="name-input" class="name-input" placeholder="Digite seu nome..." style="display:none;">
+        </div>
+    </div>
+
+    <!-- A div com a classe "clouds" é uma animação de nuvens. 
+    É usada apenas para trazer a animação de nuvens descrito no 
+    CSS para tela de jogo, sem impacto direto na jogabilidade.-->
+    <div class="clouds"></div>
+
+    <script src="js/scriptDJ.js"></script>
+</body>
+
+</html>
